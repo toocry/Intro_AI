@@ -5,14 +5,6 @@ from minesweeper_common import UNKNOWN, MINE, get_neighbors
 RUN_TESTS = False
 
 """
-    TODO: Improve the strategy for playing Minesweeper provided in this file.
-    The provided strategy simply counts the number of unexplored mines in the neighborhood of each cells.
-    If this couting concludes that a cell has to contain a mine, then it is marked.
-    If it concludes that a cell cannot contain a mine, then it is explored; i.e. function Player.preprocessing returns its coordinates.
-    If the simple couting algorithm does not find a unexplored cell provably without a mine,
-     function Player.probability_player is called to find an unexplored cell with the minimal probability having a mine.
-    A recommended approach is implementing the function Player.get_each_mine_probability.
-    You can adopt this file as you like but you have to keep the interface so that your player properly works on recodex; i.e.
         * Player.__init__ is called in the beginning of every game.
         * Player.turn is called to explore one cell.
 """
